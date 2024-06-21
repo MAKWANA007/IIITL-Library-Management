@@ -1,0 +1,57 @@
+// Add book
+
+{
+    "name": "Name",
+    "author": "Author",
+    "genre": "horror",
+    "quantity": 50
+}
+
+// update book
+
+{
+    "bookId": "629b7a2848f8e30ce11c631a",
+    "name" : "New Name",
+    "author": "New author",
+    "genre": "comedy",
+    "quantity": 20
+}
+
+// delete book
+
+{
+    "bookId": "629b7a2848f8e30ce11c631a"
+}
+
+// issue book --- only admin
+
+{
+    "bookId": "629ad803bda78b2fd136c5bf",
+    "studentId": "LCI2021006"
+}
+
+// request issue
+
+{
+    "bookId": "629ad803bda78b2fd136c5bf",
+    "studentId": "LCI2021006"
+}
+
+(status 0 => pending, 1 => approved, 2 => rejected)
+
+// handle issue request --- only admin
+
+{
+    "requestId": "629aebbbfbc71c198175d90f",
+    "status": 1
+}
+
+// return book --- only admin
+
+{
+    "issueId": "629af0d75dd9731c396097d3"
+}
+
+// search book 
+
+localhost:9000/api/books/search?category=name&query=java+oops
